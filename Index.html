@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>Darshan Manoj - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Darshan Manoj</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Darshan Manoj</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/portfolioimage1.png" alt="Aditya More profile picture" class="main_pic" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I,m</p>
+            <h1 class="title">Darshan Manoj</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Manoj,Darshan.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/darshanjm/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/darshan-jain'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/portfolioimage2.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1+ year <br />Software Engineer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Experience icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>MS in CS @ USC'26</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p id="about" style="text-align: justify;">
+                        I am a Master’s student in Computer Science at the University of Southern California, with a strong focus on solving complex problems through machine learning and advanced algorithms. My expertise extends to full-stack web development, where I build scalable and efficient applications, as well as conducting research in blockchain, security, and data science. My academic projects have addressed real-world challenges, such as developing cross-chain interoperable systems and enhancing data-sharing security. Passionate about innovation, I am dedicated to bridging the gap between theoretical knowledge and practical application to create impactful technological solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Angular & React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Bootstrap/ Tailwind</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>SwiftUI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>NodeJS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL & MongoDB</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>AWS & GCP</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>ExpressJS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Xcode - Swift</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Machine Learning & Blockchain</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>TensorFlow</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>NumPy & Pandas</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Matplotlib</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Scikit-learn</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Solidity</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Python & JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/weatherapp.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Weather App</h2>
+                    <p style="text-align: justify;">Built using Tomorrow.io API, Google Place Autocomplete API, ipInfo API & Highcharts. Deployed on Google Cloud and code available for preview upon request. </p>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://cs571assign2.wl.r.appspot.com/'">
+                            HTML,CSS,JS + Python Demo
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://cs571assignthree.wl.r.appspot.com/'">
+                            MEAN Stack Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/invichat.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Invi-chat</h2>
+                    <p style="text-align: justify;">Engineered a Social Media based Inventory Management Bot utilizing Microservices for client-server interaction. Used Twillio API to send and receive messages via Whatsapp, MongoDB to store files and ML-Recommendation system.</p>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://youtu.be/zB4FxrTj458?t=5535'">
+                            Amazon Hackathon Demo
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://drive.google.com/file/d/1nSuoiog_uaUAoRycibOj8D9NBP1ZM22b/view'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/weather-project.jpg" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">
+                        SwiftUI - iOS Weather App
+                    </h2>
+                    <p style="text-align: justify;">Built using Tomorrow.io API, Google Place Autocomplete API, ipInfo API & Highcharts. Deployed on Google Cloud and code available for preview upon request. </p>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/darshan-jain/tooHotInit'">
+                            Github Link
+                        </button>
+                        
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://drive.google.com/file/d/1-GHeUQ6-GgVFyHEj9Qeq-_VDuF--uYjm/view?usp=sharing'">
+                            Demo Link
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/mlfinance3.jpg" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">
+                        Machine Learning for Finance
+                    </h2>
+                    <p style="text-align: justify;">Built a stock price predictor using Ridge Regression Model & Deep Neural Networks. <br> Learned about asset allocation and capital markets and understood risk tolerance, target returns and investment strategies.</p>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/darshan-jain/ml-finance'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/darshan-jain/ml-finance/blob/main/4-sentiment-analysis-on-stock-data.ipynb'">
+                            NLP Link
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon" />
+                <p>
+                    <a href="mailto:darshandhokajain@gmail.com">darshandhokajain@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p>
+                    <a href="https://www.linkedin.com/in/darshanjm/">LinkedIn - Darshan Manoj</a>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Aditya More. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
